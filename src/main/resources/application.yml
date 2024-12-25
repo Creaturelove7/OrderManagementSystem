@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: orderhomeword
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/order_hw
+    username: postgres
+    password: secrets
+  sql:
+    init:
+      mode: always
+      schema-locations: "classpath:postgres-init.sql"
+
+
